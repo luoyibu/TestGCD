@@ -14,6 +14,7 @@
 		386F21D719FBB4B600B3B2DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386F21D619FBB4B600B3B2DE /* Images.xcassets */; };
 		386F21DA19FBB4B600B3B2DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 386F21D819FBB4B600B3B2DE /* LaunchScreen.xib */; };
 		386F21E619FBB4B600B3B2DE /* testARCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F21E519FBB4B600B3B2DE /* testARCTests.m */; };
+		386F21F119FBB4D200B3B2DE /* GCDClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F21F019FBB4D200B3B2DE /* GCDClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		386F21DF19FBB4B600B3B2DE /* testARCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testARCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		386F21E419FBB4B600B3B2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		386F21E519FBB4B600B3B2DE /* testARCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testARCTests.m; sourceTree = "<group>"; };
+		386F21EF19FBB4D200B3B2DE /* GCDClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDClass.h; sourceTree = "<group>"; };
+		386F21F019FBB4D200B3B2DE /* GCDClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				386F21D619FBB4B600B3B2DE /* Images.xcassets */,
 				386F21D819FBB4B600B3B2DE /* LaunchScreen.xib */,
 				386F21C919FBB4B600B3B2DE /* Supporting Files */,
+				386F21EF19FBB4D200B3B2DE /* GCDClass.h */,
+				386F21F019FBB4D200B3B2DE /* GCDClass.m */,
 			);
 			path = testARC;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				386F21D219FBB4B600B3B2DE /* ViewController.m in Sources */,
+				386F21F119FBB4D200B3B2DE /* GCDClass.m in Sources */,
 				386F21CF19FBB4B600B3B2DE /* AppDelegate.m in Sources */,
 				386F21CC19FBB4B600B3B2DE /* main.m in Sources */,
 			);
