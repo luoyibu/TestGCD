@@ -64,8 +64,9 @@
             [self setSafeObject:[NSString stringWithFormat:@"86+131633829%i", i] forKey:KEY];
         });
         //主线程读
-        NSString *result = [self getSafeObjectForKey:KEY];
+        NSString *result = [[self getSafeObjectForKey:KEY] retain];
         NSLog(@"get string: %@, length : %lu", result, result.length);
+        [result release];
     }
 }
 
