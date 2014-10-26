@@ -51,9 +51,9 @@
 {
     __block id result = nil;
     dispatch_sync(self.ioQueue, ^{
-        result = [_dic objectForKey:key];
+        result = [[_dic objectForKey:key] retain];
     });
-    return result;
+    return [result autorelease];
 }
 
 - (void)test
@@ -64,9 +64,8 @@
             [self setSafeObject:[NSString stringWithFormat:@"86+131633829%i", i] forKey:KEY];
         });
         //主线程读
-        NSString *result = [[self getSafeObjectForKey:KEY] retain];
+        NSString *result = [self getSafeObjectForKey:KEY];
         NSLog(@"get string: %@, length : %lu", result, result.length);
-        [result release];
     }
 }
 
