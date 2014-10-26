@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		386F21CC19FBB4B600B3B2DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F21CB19FBB4B600B3B2DE /* main.m */; };
 		386F21CF19FBB4B600B3B2DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F21CE19FBB4B600B3B2DE /* AppDelegate.m */; };
-		386F21D219FBB4B600B3B2DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F21D119FBB4B600B3B2DE /* ViewController.m */; };
+		386F21D219FBB4B600B3B2DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F21D119FBB4B600B3B2DE /* ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		386F21D519FBB4B600B3B2DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386F21D319FBB4B600B3B2DE /* Main.storyboard */; };
 		386F21D719FBB4B600B3B2DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386F21D619FBB4B600B3B2DE /* Images.xcassets */; };
 		386F21DA19FBB4B600B3B2DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 386F21D819FBB4B600B3B2DE /* LaunchScreen.xib */; };
 		386F21E619FBB4B600B3B2DE /* testARCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F21E519FBB4B600B3B2DE /* testARCTests.m */; };
 		386F21F119FBB4D200B3B2DE /* GCDClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F21F019FBB4D200B3B2DE /* GCDClass.m */; };
+		386F21F419FBB9F600B3B2DE /* GCDClassNOARC.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F21F319FBB9F600B3B2DE /* GCDClassNOARC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		386F21E519FBB4B600B3B2DE /* testARCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testARCTests.m; sourceTree = "<group>"; };
 		386F21EF19FBB4D200B3B2DE /* GCDClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDClass.h; sourceTree = "<group>"; };
 		386F21F019FBB4D200B3B2DE /* GCDClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDClass.m; sourceTree = "<group>"; };
+		386F21F219FBB9F600B3B2DE /* GCDClassNOARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDClassNOARC.h; sourceTree = "<group>"; };
+		386F21F319FBB9F600B3B2DE /* GCDClassNOARC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDClassNOARC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				386F21C919FBB4B600B3B2DE /* Supporting Files */,
 				386F21EF19FBB4D200B3B2DE /* GCDClass.h */,
 				386F21F019FBB4D200B3B2DE /* GCDClass.m */,
+				386F21F219FBB9F600B3B2DE /* GCDClassNOARC.h */,
+				386F21F319FBB9F600B3B2DE /* GCDClassNOARC.m */,
 			);
 			path = testARC;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				386F21F119FBB4D200B3B2DE /* GCDClass.m in Sources */,
 				386F21CF19FBB4B600B3B2DE /* AppDelegate.m in Sources */,
 				386F21CC19FBB4B600B3B2DE /* main.m in Sources */,
+				386F21F419FBB9F600B3B2DE /* GCDClassNOARC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

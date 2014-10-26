@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "GCDClass.h"
+#import "GCDClassNOARC.h"
 
 @interface ViewController ()
 
@@ -19,12 +20,17 @@
     [super viewDidLoad];
     GCDClass *object = [[GCDClass alloc] init];
     [object test];
-    // Do any additional setup after loading the view, typically from a nib.
+    [object release];
+//
+//    GCDClassNOARC *noArcObject = [[GCDClassNOARC alloc] init];
+//    [noArcObject test];
+//    [noArcObject release];
+//    
+    NSLog(@"done");
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  GCDClass.m
+//  GCDClassNOARC.m
 //  testARC
 //
 //  Created by luoxuan-mac on 14/10/25.
@@ -8,17 +8,23 @@
 
 #define KEY @"uKey"
 
-#import "GCDClass.h"
+#import "GCDClassNOARC.h"
 
-@interface GCDClass ()
+@interface GCDClassNOARC ()
 
 @property (nonatomic, retain) dispatch_queue_t ioQueue;
-
 @property (nonatomic, retain) NSMutableDictionary *dic;
 
 @end
 
-@implementation GCDClass
+@implementation GCDClassNOARC
+
+- (void)dealloc
+{
+    self.ioQueue = nil;
+    self.dic = nil;
+    [super dealloc];
+}
 
 - (instancetype)init
 {
@@ -37,6 +43,7 @@
             [_dic setObject:object forKey:key];
         }
     });
+    [key release];
     NSLog(@"set object : %i", [object intValue]);
 }
 
@@ -61,5 +68,6 @@
         NSLog(@"get string: %@, length : %lu", result, result.length);
     }
 }
+
 
 @end
