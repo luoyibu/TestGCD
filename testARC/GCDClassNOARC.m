@@ -51,9 +51,23 @@
 {
     __block id result = nil;
     dispatch_sync(self.ioQueue, ^{
-        result = [[_dic objectForKey:key] retain];
+        result = [_dic objectForKey:key];
     });
-    return [result autorelease];
+    return result;
+}
+
+- (void)test1
+{
+    for (int i = 0; i < 1000000; i++) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            //多线程写
+            [self setSafeObject:[NSString stringWithFormat:@"86+131633829%i", i] forKey:KEY];
+        });
+        //主线程读
+        NSString *result = [[self getSafeObjectForKey:KEY] retain];
+        NSLog(@"get string: %@, length : %lu", result, result.length);
+        [result release];
+    }
 }
 
 - (void)test

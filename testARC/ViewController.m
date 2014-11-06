@@ -18,14 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    GCDClass *object = [[GCDClass alloc] init];
-    [object test];
-    [object release];
-//
-//    GCDClassNOARC *noArcObject = [[GCDClassNOARC alloc] init];
-//    [noArcObject test];
-//    [noArcObject release];
-//    
+//    GCDClass *object = [[GCDClass alloc] init];
+//    [object test];
+//    [object release];
+
+    GCDClassNOARC *noArcObject = [[GCDClassNOARC alloc] init];
+    [noArcObject test1];
+    [noArcObject release];
+    
     NSLog(@"done");
 }
 

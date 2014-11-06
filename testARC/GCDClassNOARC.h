@@ -11,5 +11,6 @@
 @interface GCDClassNOARC : NSObject
 
 - (void)test;
+- (void)test1;
 
 @end
