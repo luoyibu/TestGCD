@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "GCDClass.h"
 #import "GCDClassNOARC.h"
+#import "SyncNOARC.h"
 
 @interface ViewController ()
 
@@ -22,9 +23,12 @@
 //    [object test];
 //    [object release];
 
-    GCDClassNOARC *noArcObject = [[GCDClassNOARC alloc] init];
+//    GCDClassNOARC *noArcObject = [[GCDClassNOARC alloc] init];
+//    [noArcObject test1];
+//    [noArcObject release];
+
+    SyncNOARC *noArcObject = [[SyncNOARC alloc] init];
     [noArcObject test1];
-    [noArcObject release];
     
     NSLog(@"done");
 }

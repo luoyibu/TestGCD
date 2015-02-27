@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		380D235E1A5CD78F00560B6D /* SyncNOARC.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D235D1A5CD78F00560B6D /* SyncNOARC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		386F21CC19FBB4B600B3B2DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F21CB19FBB4B600B3B2DE /* main.m */; };
 		386F21CF19FBB4B600B3B2DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F21CE19FBB4B600B3B2DE /* AppDelegate.m */; };
 		386F21D219FBB4B600B3B2DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F21D119FBB4B600B3B2DE /* ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		380D235C1A5CD78F00560B6D /* SyncNOARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncNOARC.h; sourceTree = "<group>"; };
+		380D235D1A5CD78F00560B6D /* SyncNOARC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncNOARC.m; sourceTree = "<group>"; };
 		386F21C619FBB4B600B3B2DE /* testARC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testARC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		386F21CA19FBB4B600B3B2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		386F21CB19FBB4B600B3B2DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				386F21F019FBB4D200B3B2DE /* GCDClass.m */,
 				386F21F219FBB9F600B3B2DE /* GCDClassNOARC.h */,
 				386F21F319FBB9F600B3B2DE /* GCDClassNOARC.m */,
+				380D235C1A5CD78F00560B6D /* SyncNOARC.h */,
+				380D235D1A5CD78F00560B6D /* SyncNOARC.m */,
 			);
 			path = testARC;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				380D235E1A5CD78F00560B6D /* SyncNOARC.m in Sources */,
 				386F21D219FBB4B600B3B2DE /* ViewController.m in Sources */,
 				386F21F119FBB4D200B3B2DE /* GCDClass.m in Sources */,
 				386F21CF19FBB4B600B3B2DE /* AppDelegate.m in Sources */,
@@ -426,6 +432,7 @@
 				386F21EB19FBB4B600B3B2DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		386F21EC19FBB4B600B3B2DE /* Build configuration list for PBXNativeTarget "testARCTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +441,7 @@
 				386F21EE19FBB4B600B3B2DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
